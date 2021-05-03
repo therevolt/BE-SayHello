@@ -221,7 +221,7 @@ exports.getListUser = (req, res) => {
   if (verify !== true) return formatResult(res, 400, false, verify, null);
   const decode = decodeToken(req);
   const userId = decode.userId;
-  User.findAll({ where: { [Op.not]: { userId } } })
+  User.findAll({ where: { [Op.not]: { userId }, active: true } })
     .then(async (result) => {
       if (result.length > 0) {
         const tempData = [];

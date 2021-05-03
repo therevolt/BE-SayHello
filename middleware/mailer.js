@@ -17,8 +17,8 @@ const sendMail = (mailTo, body) => {
         .sendMail({
           from: process.env.EMAIL, // sender address
           to: mailTo, // list of receivers
-          subject: "ZWallet Mail Notifications", // Subject line
-          text: "ZWallet Website", // plain text body
+          subject: "SayHello Mail Notifications", // Subject line
+          text: "SayHello Apps", // plain text body
           html: `<body style="margin: 0; padding: 0;">
         <table cellpadding="0" cellspacing="0" width="100%">
          <tr>

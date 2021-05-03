@@ -32,8 +32,7 @@ module.exports = (sequelize, Sequelize) => {
     },
     avatar: {
       type: Sequelize.STRING,
-      defaultValue:
-        "https://icons-for-free.com/iconfiles/png/512/logo+react+react+js+icon-1320184811840217251.png",
+      defaultValue: "https://www.jewishinteractive.org/wp-content/uploads/2016/03/person.png",
     },
     active: {
       type: Sequelize.BOOLEAN,
