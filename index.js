@@ -56,6 +56,7 @@ io.on("connection", (socket) => {
   const users = db.user;
   socket.join(`user:${socket.handshake.query.sender}`);
   users.update({ socketId: socket.id }, { where: { userId: socket.handshake.query.sender } });
+  socket.broadcast.emit("online", { userId: socket.handshake.query.sender });
   socket.on("sendMsg", (msg) => {
     socket.to(`user:${msg.to}`).emit("recMsg", {
       to: msg.to,
@@ -70,8 +71,9 @@ io.on("connection", (socket) => {
       from: socket.handshake.query.sender,
     });
   });
-  socket.on("disconnect", () => {
-    users.update({ socketId: `` }, { where: { userId: socket.handshake.query.sender } });
+  socket.on("disconnect", async () => {
+    await users.update({ socketId: `` }, { where: { userId: socket.handshake.query.sender } });
+    socket.broadcast.emit("online", { userId: socket.handshake.query.sender });
   });
 });
 
