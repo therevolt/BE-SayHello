@@ -234,6 +234,7 @@ exports.getListUser = (req, res) => {
             name: item.name,
             bio: item.bio,
             username: item.username,
+            phone: item.phone,
           };
         });
         for (let i in newData) {

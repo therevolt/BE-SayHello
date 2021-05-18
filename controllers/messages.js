@@ -61,7 +61,6 @@ exports.getHistoryMessage = (req, res) => {
       formatResult(res, 200, true, "Success Get Messages", dataResult);
     })
     .catch((err) => {
-      console.log(err);
       formatResult(res, 500, false, err, null);
     });
 };
@@ -102,7 +101,6 @@ exports.deleteMessages = (req, res) => {
       formatResult(res, 200, true, "Success Delete Messages", null);
     })
     .catch((err) => {
-      console.log(err);
       formatResult(res, 500, false, err, null);
     });
 };
