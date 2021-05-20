@@ -1,14 +1,12 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=400px height=200px src="https://ourcodeworld.com/public-media/articles/articleocw-57f3accea486b.png" alt="logo"></a>
+ <img width=400px src="https://i.ibb.co/k9mXPSQ/Blue-Bold-Connected-Letter-C-Logo.png" alt="logo"></a>
 </p>
-
-<h3 align="center">Backend SayHello Apps</h3>
 
 ---
 
 ## 🧐 About
-This is the repository Backend of the Bootcamp Arkademy task
+Backend SayHello
 
 ## 💻 Installation
 
@@ -31,10 +29,10 @@ npm install
 # ---------------------------------------
 #               CONFIG DB
 # ---------------------------------------
-DB_HOST= #host database
-DB_USER= #user database
-DB_PASS= #pass database
-DB_NAME= #database name
+DB_HOST= HOST_DATABASE
+DB_USER= USER_DATABASE
+DB_PASSWORD= PASSWORD_DATABASE
+DB_NAME= DATABASE_NAME_SCHEME
 
 # ---------------------------------------
 #            CONFIG WEBSITE
@@ -62,7 +60,7 @@ STATIC_FOLDER=/avatar
 Detail CONFIG GENERAL
 | EXAMPLE URL | [http://localhost:6000]() |
 | :-------------: |:-------------:|
-| PORT | 6000 |
+| PORT | 3000 |
 | HOST | [http://localhost]() |
 
 4. Done, You can run it in the way below
