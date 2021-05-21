@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=400px src="https://i.ibb.co/k9mXPSQ/Blue-Bold-Connected-Letter-C-Logo.png" alt="logo"></a>
+ <img width=200px src="https://i.ibb.co/k9mXPSQ/Blue-Bold-Connected-Letter-C-Logo.png" alt="logo"></a>
 </p>
 
 ---
