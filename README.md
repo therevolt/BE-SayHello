@@ -3,8 +3,6 @@
  <img width=200px src="https://i.ibb.co/k9mXPSQ/Blue-Bold-Connected-Letter-C-Logo.png" alt="logo"></a>
 </p>
 
----
-
 ## 🧐 About
 Backend SayHello
 
